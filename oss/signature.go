@@ -52,6 +52,8 @@ var ossParamsToSign = map[string]bool{
 	"website":                      true,
 	"x-oss-process":                true,
 	"x-oss-traffic-limit":          true,
+	"x-oss-ac-source-ip":           true,
+	"x-oss-ac-subnet-mask":         true,
 }
 
 func (client *Client) signRequest(request *request) {
